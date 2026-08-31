@@ -1,0 +1,8 @@
+id: account-balance-read
+workflow_id: account.balance.read
+risk_level: green
+allowed_tools:
+  - account.balance.read
+success_verifier: account-balance-verifier
+human_handoff_reason: identity mismatch or unverifiable balance
+synthetic_only: true
