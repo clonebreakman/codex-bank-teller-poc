@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: codex-bank-teller-postgres
+    environment:
+      POSTGRES_DB: synthetic_bank
+      POSTGRES_USER: synthetic_bank
+      POSTGRES_PASSWORD: synthetic_bank_dev_only
+      SYNTHETIC_ONLY: "true"
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - synthetic-bank-postgres:/var/lib/postgresql/data
+      - ./postgres/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U synthetic_bank -d synthetic_bank"]
+      interval: 2s
+      timeout: 5s
+      retries: 15
+    restart: "no"
+
+volumes:
+  synthetic-bank-postgres:
