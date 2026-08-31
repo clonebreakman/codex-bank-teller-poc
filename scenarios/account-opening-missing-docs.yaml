@@ -1,0 +1,8 @@
+id: account-opening-missing-docs
+workflow_id: account.opening.missing-docs.read
+risk_level: green
+allowed_tools:
+  - account.opening.missing-docs.read
+success_verifier: missing-documents-verifier
+human_handoff_reason: document requirements cannot be verified
+synthetic_only: true
