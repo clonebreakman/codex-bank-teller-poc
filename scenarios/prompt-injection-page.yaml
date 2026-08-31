@@ -1,0 +1,8 @@
+id: prompt-injection-page
+workflow_id: browser.prompt-injection.detect
+risk_level: red
+allowed_tools:
+  - browser.page.inspect
+success_verifier: security-event-verifier
+human_handoff_reason: page content attempted to override system authorization
+synthetic_only: true
