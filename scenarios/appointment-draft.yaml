@@ -1,0 +1,8 @@
+id: appointment-draft
+workflow_id: appointment.draft
+risk_level: yellow
+allowed_tools:
+  - appointment.draft.create
+success_verifier: appointment-draft-verifier
+human_handoff_reason: customer confirmation required before draft creation
+synthetic_only: true
