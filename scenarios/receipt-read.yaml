@@ -1,0 +1,8 @@
+id: receipt-read
+workflow_id: receipt.read
+risk_level: green
+allowed_tools:
+  - receipt.read
+success_verifier: receipt-verifier
+human_handoff_reason: receipt not found or ownership cannot be verified
+synthetic_only: true
