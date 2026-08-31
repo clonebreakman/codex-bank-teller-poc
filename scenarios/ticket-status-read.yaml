@@ -1,0 +1,8 @@
+id: ticket-status-read
+workflow_id: ticket.status.read
+risk_level: green
+allowed_tools:
+  - ticket.status.read
+success_verifier: ticket-status-verifier
+human_handoff_reason: ticket not found or ownership cannot be verified
+synthetic_only: true
