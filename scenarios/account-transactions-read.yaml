@@ -1,0 +1,8 @@
+id: account-transactions-read
+workflow_id: account.transactions.read
+risk_level: green
+allowed_tools:
+  - account.transactions.read
+success_verifier: transaction-list-verifier
+human_handoff_reason: identity mismatch or unverifiable transaction list
+synthetic_only: true
