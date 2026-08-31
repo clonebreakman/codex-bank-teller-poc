@@ -1,0 +1,8 @@
+id: fee-schedule-read
+workflow_id: fee.schedule.read
+risk_level: green
+allowed_tools:
+  - fee.schedule.read
+success_verifier: fee-schedule-verifier
+human_handoff_reason: fee version or effective date cannot be verified
+synthetic_only: true
