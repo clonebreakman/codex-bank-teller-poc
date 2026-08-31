@@ -1,0 +1,8 @@
+id: customer-summary
+workflow_id: customer.summary.read
+risk_level: green
+allowed_tools:
+  - customer.summary.read
+success_verifier: customer-summary-verifier
+human_handoff_reason: customer ownership or summary source cannot be verified
+synthetic_only: true
