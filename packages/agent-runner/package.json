@@ -1,0 +1,14 @@
+{
+  "name": "@codex-bank-teller/agent-runner",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@codex-bank-teller/policy-engine": "workspace:*",
+    "@codex-bank-teller/tool-gateway": "workspace:*",
+    "@codex-bank-teller/workflow-registry": "workspace:*"
+  }
+}
