@@ -1,0 +1,13 @@
+{
+  "name": "@codex-bank-teller/verification",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@codex-bank-teller/audit-log": "workspace:*",
+    "@codex-bank-teller/mock-bank": "workspace:*"
+  }
+}
