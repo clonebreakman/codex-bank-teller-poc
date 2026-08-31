@@ -1,0 +1,20 @@
+{
+  "name": "@codex-bank-teller/mock-bank",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/server.ts",
+    "./service": "./src/service.ts"
+  },
+  "dependencies": {
+    "@codex-bank-teller/domain-model": "workspace:*",
+    "fastify": "^5.6.1"
+  },
+  "scripts": {
+    "dev": "tsx src/main.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.3"
+  }
+}
