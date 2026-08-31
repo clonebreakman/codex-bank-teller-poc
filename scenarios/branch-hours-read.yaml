@@ -1,0 +1,8 @@
+id: branch-hours-read
+workflow_id: branch.hours.read
+risk_level: green
+allowed_tools:
+  - branch.hours.read
+success_verifier: branch-hours-verifier
+human_handoff_reason: branch or date cannot be matched to synthetic schedule
+synthetic_only: true
